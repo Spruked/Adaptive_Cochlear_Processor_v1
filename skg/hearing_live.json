@@ -1,0 +1,540 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": 1768599548.3793325,
+    "last_updated": 1768600554.4345925
+  },
+  "phoneme_mastery": {
+    "the_v1": {
+      "mastery_score": 0.9844999999999996,
+      "exposure_count": 12,
+      "mishearing_history": [
+        {
+          "timestamp": 1768599553.9415376,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599557.624428,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599649.9407992,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599653.7847269,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599657.545709,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599661.3055182,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599665.0105581,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599668.7626595,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599672.8471112,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599676.5627372,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599680.272456,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599684.0387602,
+          "was_misheard": false,
+          "context": "general"
+        }
+      ]
+    },
+    "fut_v3": {
+      "mastery_score": 0.9844999999999996,
+      "exposure_count": 12,
+      "mishearing_history": [
+        {
+          "timestamp": 1768599553.9415376,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599557.624428,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599649.9407992,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599653.7847269,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599657.545709,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599661.3055182,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599665.0105581,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599668.7626595,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599672.8471112,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599676.5921452,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599680.272456,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599684.0387602,
+          "was_misheard": false,
+          "context": "general"
+        }
+      ]
+    },
+    "of_v1": {
+      "mastery_score": 0.9844999999999996,
+      "exposure_count": 12,
+      "mishearing_history": [
+        {
+          "timestamp": 1768599553.9415376,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599557.624428,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599649.9407992,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599653.7847269,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599657.545709,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599661.3055182,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599665.0390131,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599668.7626595,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599672.8471112,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599676.5921452,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599680.272456,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599684.0387602,
+          "was_misheard": false,
+          "context": "general"
+        }
+      ]
+    },
+    "ai_v0": {
+      "mastery_score": 0.9844999999999996,
+      "exposure_count": 12,
+      "mishearing_history": [
+        {
+          "timestamp": 1768599553.9415376,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599557.6474295,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599649.9407992,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599653.8047273,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599657.545709,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599661.3055182,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599665.0390131,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599668.7626595,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599672.8471112,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599676.5921452,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599680.272456,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599684.0387602,
+          "was_misheard": false,
+          "context": "general"
+        }
+      ]
+    },
+    "is_v1": {
+      "mastery_score": 0.9844999999999996,
+      "exposure_count": 12,
+      "mishearing_history": [
+        {
+          "timestamp": 1768599553.9415376,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599557.6474295,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599649.9407992,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599653.8047273,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599657.545709,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599661.3055182,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599665.0390131,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599668.7626595,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599672.8471112,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599676.5921452,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599680.2917678,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599684.0387602,
+          "was_misheard": false,
+          "context": "general"
+        }
+      ]
+    },
+    "mac_v3": {
+      "mastery_score": 0.9844999999999996,
+      "exposure_count": 12,
+      "mishearing_history": [
+        {
+          "timestamp": 1768599553.9415376,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599557.6474295,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599649.9407992,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599653.8047273,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599657.545709,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599661.3055182,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599665.0390131,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599668.8022976,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599672.8471112,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599676.5921452,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599680.2917678,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599684.0387602,
+          "was_misheard": false,
+          "context": "general"
+        }
+      ]
+    },
+    "lea_v3": {
+      "mastery_score": 0.9844999999999996,
+      "exposure_count": 12,
+      "mishearing_history": [
+        {
+          "timestamp": 1768599553.9415376,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599557.6474295,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599649.9407992,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599653.8047273,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599657.5605698,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599661.3055182,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599665.0390131,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599668.8022976,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599672.8471112,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599676.5921452,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599680.2917678,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768599684.0387602,
+          "was_misheard": false,
+          "context": "general"
+        }
+      ]
+    },
+    "see_v2": {
+      "mastery_score": 0.6519999999999999,
+      "exposure_count": 2,
+      "mishearing_history": [
+        {
+          "timestamp": 1768600547.5991106,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768600554.4015899,
+          "was_misheard": false,
+          "context": "general"
+        }
+      ]
+    },
+    "you_v2": {
+      "mastery_score": 0.6519999999999999,
+      "exposure_count": 2,
+      "mishearing_history": [
+        {
+          "timestamp": 1768600547.5991106,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768600554.4015899,
+          "was_misheard": false,
+          "context": "general"
+        }
+      ]
+    },
+    "nex_v1": {
+      "mastery_score": 0.6519999999999999,
+      "exposure_count": 2,
+      "mishearing_history": [
+        {
+          "timestamp": 1768600547.5991106,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768600554.4015899,
+          "was_misheard": false,
+          "context": "general"
+        }
+      ]
+    },
+    "tim_v2": {
+      "mastery_score": 0.6519999999999999,
+      "exposure_count": 2,
+      "mishearing_history": [
+        {
+          "timestamp": 1768600547.5991106,
+          "was_misheard": false,
+          "context": "general"
+        },
+        {
+          "timestamp": 1768600554.4015899,
+          "was_misheard": false,
+          "context": "general"
+        }
+      ]
+    }
+  },
+  "speaker_profiles": {},
+  "correction_memory": {
+    "count": 0,
+    "last_100": []
+  }
+}
