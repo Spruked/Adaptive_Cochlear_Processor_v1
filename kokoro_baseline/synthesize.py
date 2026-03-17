@@ -34,7 +34,8 @@ class KokoroBaseline:
     """
 
     def __init__(self):
-        self.audio_dir = Path(os.getenv("ACP_AUDIO_DIR", Path.cwd() / "audio_cache"))
+        default_audio_dir = Path(__file__).resolve().parents[1] / "audio_cache"
+        self.audio_dir = Path(os.getenv("ACP_AUDIO_DIR", str(default_audio_dir)))
         self.audio_dir.mkdir(exist_ok=True, parents=True)
         self.kokoro_model_path = os.getenv("ACP_KOKORO_MODEL_PATH", "").strip()
         self.kokoro_voices_path = os.getenv("ACP_KOKORO_VOICES_PATH", "").strip()
