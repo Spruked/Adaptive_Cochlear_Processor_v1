@@ -1,5 +1,5 @@
 ACP 1.0 — Adaptive Cochlear Processor
-Perception‑first speech‑to‑text that learns like a human listener.
+Perception‑first speech‑to‑text that learns like a human listener, with a Kokoro-first voice baseline.
 
 ACP doesn’t try to be Whisper.
 It models hearing — not transcription.
@@ -94,6 +94,8 @@ Context‑aware cognitive correction
 CPU‑friendly and lightweight (<50MB)
 
 Deterministic, auditable processing pipeline
+Whisper baseline for reliable transcription fallback
+Kokoro baseline for reliable speech synthesis fallback
 
 Developer Tools
 Install with research utilities:

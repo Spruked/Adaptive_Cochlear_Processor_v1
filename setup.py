@@ -14,7 +14,9 @@ setup(
         "numpy>=1.24.0",
         "soundfile>=0.12.0",
         "torch>=2.0.0",  # For decoder
-        "phonemizer>=3.2.0"  # For phoneme extraction
+        "phonemizer>=3.2.0",  # For phoneme extraction
+        "edge-tts>=7.2.3",
+        "kokoro-onnx>=0.5.0",
     ],
     extras_require={
         "dev": ["pytest", "black", "whisper"],  # Whisper only for teaching

@@ -2,15 +2,13 @@
 # Licensed under the MIT License. See LICENSE file for details.
 
 """
-TTS Router: Routes text → POM (via ACP) or Coqui XTTS fallback.
+TTS Router: Routes text → POM (via ACP) or Kokoro baseline fallback.
 Same pattern as STT router: ACP never knows it was bypassed.
 """
 import time
 import logging
-import os  # ← NEW: for getenv
-from pathlib import Path  # ← NEW: for Path
+from pathlib import Path
 from typing import Dict, Any
-import numpy as np
 
 # Import ACP's voice module (WSL2 only)
 try:
@@ -20,8 +18,8 @@ except ImportError:
     ACP_VOICE_AVAILABLE = False
     ACPSynthesisEngine = None
 
-# Import Coqui fallback (Windows)
-from coqui_baseline.synthesize import CoquiBaseline
+# Import Kokoro baseline fallback (Windows-friendly)
+from kokoro_baseline.synthesize import KokoroBaseline
 
 from .config import RouterConfig
 
@@ -36,7 +34,7 @@ class TTSRouter:
     def __init__(self):
         self.config = RouterConfig()
         self.acp_voice = None
-        self.coqui = CoquiBaseline()
+        self.kokoro = KokoroBaseline()
         self.fallback_was_used = False
         
         # Initialize ACP voice only in WSL2
@@ -46,10 +44,10 @@ class TTSRouter:
                 self.acp_voice = ACPSynthesisEngine(skg_path="skg/hearing.json")
                 logger.info("✅ ACP Voice initialized as primary TTS")
             except Exception as e:
-                logger.warning(f"⚠️ ACP Voice failed: {e}. Coqui only.")
+                logger.warning(f"⚠️ ACP Voice failed: {e}. Kokoro baseline only.")
                 self.acp_voice = None
         else:
-            logger.info("🏁 Coqui XTTS as primary TTS (ACP voice disabled)")
+            logger.info("🏁 Kokoro baseline as primary fallback TTS (ACP voice disabled)")
     
     def synthesize(self, text: str, speaker_id: str = None, **kwargs) -> Dict[str, Any]:
         """
@@ -79,27 +77,27 @@ class TTSRouter:
                     logger.warning("⚠️ ACP Voice produced invalid audio, falling back")
                     
             except Exception as e:
-                logger.error(f"🔥 ACP Voice crashed: {e}. Activating Coqui fallback.")
-        
+                logger.error(f"🔥 ACP Voice crashed: {e}. Activating Kokoro baseline.")
+
         # === FALLBACK PATH ===
         self.fallback_was_used = True
         try:
-            fallback_result = self.coqui.synthesize(text, speaker_id)
-            logger.info(f"🏁 Coqui fallback: {len(text)} chars")
+            fallback_result = self.kokoro.synthesize(text, speaker_id)
+            logger.info(f"🏁 Kokoro baseline fallback: {len(text)} chars")
             
             return {
                 **fallback_result,
-                "_source": "coqui_baseline",
+                "_source": "kokoro_baseline",
                 "_acp_voice_failed": True,
                 "_timestamp": time.time()
             }
             
         except Exception as e:
-            logger.critical(f"🚨 Coqui fallback also failed: {e}")
+            logger.critical(f"🚨 Kokoro baseline fallback also failed: {e}")
             # Return silent audio as last resort
             return {
                 "audio_path": "fallback_silence.wav",
-                "error": "both_acp_and_coqui_failed",
+                "error": "both_acp_and_kokoro_failed",
                 "_timestamp": time.time()
             }
     
@@ -121,3 +119,15 @@ class TTSRouter:
             return False
         
         return True
+
+    def get_health_status(self) -> Dict[str, Any]:
+        """Monitoring endpoint"""
+        baseline_status = self.kokoro.get_health_status()
+        return {
+            "acp_voice_available": self.acp_voice is not None,
+            "kokoro_baseline_available": self.kokoro is not None,
+            "kokoro_assets_configured": baseline_status["kokoro_assets_configured"],
+            "edge_fallback_available": baseline_status["edge_available"],
+            "training_mode": self.config.TRAINING_MODE,
+            "fallback_was_used": self.fallback_was_used,
+        }
